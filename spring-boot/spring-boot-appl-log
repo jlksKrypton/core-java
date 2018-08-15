@@ -1,0 +1,74 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building spring-boot 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> spring-boot-maven-plugin:2.0.2.RELEASE:run (default-cli) > test-compile @ spring-boot >>>
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ spring-boot ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ spring-boot ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ spring-boot ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ spring-boot ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< spring-boot-maven-plugin:2.0.2.RELEASE:run (default-cli) < test-compile @ spring-boot <<<
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.0.2.RELEASE:run (default-cli) @ spring-boot ---
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::       (v1.5.14.RELEASE)
+
+2018-07-17 20:58:47.979  INFO 67376 --- [           main] org.suhas.proj.sbApp                     : Starting sbApp on suhas with PID 67376 (E:\studies\company\spring-boot\target\classes started by krishnasuhas in E:\studies\company\spring-boot)
+2018-07-17 20:58:47.986  INFO 67376 --- [           main] org.suhas.proj.sbApp                     : No active profile set, falling back to default profiles: default
+2018-07-17 20:58:48.060  INFO 67376 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@75fe5761: startup date [Tue Jul 17 20:58:48 GMT-04:00 2018]; root of context hierarchy
+2018-07-17 20:58:51.374  INFO 67376 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-07-17 20:58:51.432  INFO 67376 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-07-17 20:58:51.432  INFO 67376 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-07-17 20:58:51.731  INFO 67376 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-07-17 20:58:51.732  INFO 67376 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3687 ms
+2018-07-17 20:58:52.064  INFO 67376 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-07-17 20:58:52.072  INFO 67376 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-17 20:58:52.072  INFO 67376 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-17 20:58:52.074  INFO 67376 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-17 20:58:52.074  INFO 67376 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-17 20:58:52.888  INFO 67376 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/rest/books],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.Integer, org.suhas.proj.book>> org.suhas.proj.libcontroller.get()
+2018-07-17 20:58:52.891  INFO 67376 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/rest/books],methods=[POST],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.Void> org.suhas.proj.libcontroller.postone(org.suhas.proj.book)
+2018-07-17 20:58:52.895  INFO 67376 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/rest/books/{id}],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<org.suhas.proj.book> org.suhas.proj.libcontroller.getone(int)
+2018-07-17 20:58:52.896  INFO 67376 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/rest/books],methods=[PUT],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<?> org.suhas.proj.libcontroller.updateone(org.suhas.proj.book)
+2018-07-17 20:58:52.896  INFO 67376 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/rest/books{id}],methods=[DELETE],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.Void> org.suhas.proj.libcontroller.updateone(int)
+2018-07-17 20:58:52.898  INFO 67376 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/rest/init],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.String> org.suhas.proj.restController.init()
+2018-07-17 20:58:52.908  INFO 67376 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-07-17 20:58:52.909  INFO 67376 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-07-17 20:58:52.910  INFO 67376 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-07-17 20:58:52.919  INFO 67376 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-17 20:58:52.919  INFO 67376 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-17 20:58:53.181  INFO 67376 --- [           main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2018-07-17 20:58:53.546  INFO 67376 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@75fe5761: startup date [Tue Jul 17 20:58:48 GMT-04:00 2018]; root of context hierarchy
+2018-07-17 20:58:53.697  INFO 67376 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-17 20:58:53.698  INFO 67376 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-17 20:58:53.787  INFO 67376 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-17 20:58:53.858  INFO 67376 --- [           main] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: ServletContext resource [/index.html]
+2018-07-17 20:58:54.154  INFO 67376 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-07-17 20:58:54.170  INFO 67376 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-07-17 20:58:54.171  INFO 67376 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2018-07-17 20:58:54.221  INFO 67376 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2018-07-17 20:58:54.351  INFO 67376 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2018-07-17 20:58:54.773  INFO 67376 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-07-17 20:58:54.786  INFO 67376 --- [           main] org.suhas.proj.sbApp                     : Started sbApp in 7.396 seconds (JVM running for 13.64)
+2018-07-17 21:00:00.684  INFO 67376 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-17 21:00:00.684  INFO 67376 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-17 21:00:00.717  INFO 67376 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 33 ms
