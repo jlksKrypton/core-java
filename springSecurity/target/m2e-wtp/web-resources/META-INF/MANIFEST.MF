@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: springSecurity
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: krishnasuhas
+Implementation-Vendor-Id: com.suhas
+Build-Jdk: 1.8.0_171
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/springSecurity
+Created-By: Maven Integration for Eclipse
+
