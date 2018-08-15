@@ -1,0 +1,6 @@
+Java Annotations
+1.1 Java Custom Annotation -Todo example in annCustom.java
+1.2 Meta annotations in java - @Documented, @Targeted, @Inherited, @ Retention
+1.3 Built-in annotations in Java - @override, @Deprecated, @SuppressWarnings
+1.4 Java Annotations Example 
+1.5 Java Annotations Parsing - Todo example in annCustom.java
